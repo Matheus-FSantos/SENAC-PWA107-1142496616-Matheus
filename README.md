@@ -23,9 +23,7 @@
   <h6>Outros repositórios</h6>
   <nav>
     <ul>
-      <a href="https://github.com/Matheus-FSantos/Matheus-FSantos" target="_blank">
-        <li>Readme</li>
-      </a>
+      <li>Readme <a href="https://github.com/Matheus-FSantos/Matheus-FSantos" target="_blank">(Clique Aqui)</a></li>  
     </ul>
   </nav>
 </section>
