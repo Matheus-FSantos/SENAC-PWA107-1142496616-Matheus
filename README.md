@@ -24,6 +24,7 @@
   <nav>
     <ul>
       <li>Readme <a href="https://github.com/Matheus-FSantos/Matheus-FSantos" target="_blank">(Clique Aqui)</a></li>  
+      <li>Home <a href="https://github.com/Matheus-FSantos" target="_blank">(Clique Aqui)</a></li>
     </ul>
   </nav>
 </section>
