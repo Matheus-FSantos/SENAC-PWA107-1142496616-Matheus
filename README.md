@@ -20,7 +20,7 @@
 <hr>
 
 <section>
-  <h6 align="center">Outros repositórios:</h6>
+  <h6 align="center">Navegação:</h6>
   <nav>
     <ul>
       <li>Página Inicial <a href="https://github.com/Matheus-FSantos" target="_blank">(Clique Aqui)</a></li>
