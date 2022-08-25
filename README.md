@@ -3,13 +3,17 @@
 </header>
 
 <section>
-  <h5>Espaço destinado para as entregas de atividades, exercicios e projetos
-  propostos na materia de Programação Web do 2º semestre do curso de Análise e Desenvolvimento de Sistemas do Centro Universitário SENAC - São Paulo<h5>
+  <h6 align="center">Sobre:</h6>
+  <p>
+    Espaço destinado para as entregas de atividades, exercicios e projetos
+    propostos na materia de Programação Web do 2º semestre do curso de Análise e Desenvolvimento de Sistemas do Centro Universitário <a href="https://www.sp.senac.br/" target="_blank">SENAC</a> - São Paulo
+  </p>
 </section>
 
 <hr>
 
 <section>
+  <h6 align="center">Informações:</h6>
   <p>
       Aluno: Matheus F. Santos<br>
       Colaborador: Lucas Ryu Muraoka <a  href="https://github.com/LucasRyuMuraoka" target="_blank">(Repositório)</a><br>
