@@ -16,7 +16,7 @@ function Cadastro(){
         setDadosUsuarios(
             { nomeDados:entradaNome, emailDados:entradaEmail, CPFDados:entradaCPF}
         )
-
+        
         setEntradaNome('');
         setEntradaEmail('');
         setEntradaCPF('');

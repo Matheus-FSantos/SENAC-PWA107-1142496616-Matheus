@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Home from './Pages/Home/index.js'
+import Home from './Pages/Home/index.js.js'
 import Cadastro from './Pages/Cadastro/cadastro.js'
-import Financiamento from './Pages/Financiamento/financiamento.js'
+import Financiamento from './Pages/Financiamento/financiamento.js.js'
 import Movimentacao from './Pages/MovimentacaoCC/movimentacao'
 import Sobre from './Pages/Sobre/sobre'
 
