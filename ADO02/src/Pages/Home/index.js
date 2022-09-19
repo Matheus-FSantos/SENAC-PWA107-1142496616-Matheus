@@ -21,7 +21,7 @@ function Home(){
             <div>
                 <hr/>
                 <p align="center">
-                    Clique em algum campo da barra de menu acima para ser redirecionado a outra página
+                    Clique em algum campo da barra de menu acima para ser redirecionado para outra página
                 </p>
             </div>
         </div>
