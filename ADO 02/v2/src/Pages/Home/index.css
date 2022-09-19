@@ -1,0 +1,82 @@
+/*Itens padrões*/
+
+*{
+    font-family: verdana;
+}
+
+input{
+    width: 300px;
+    border-radius: 9px;
+    border: solid 1px;
+
+    transition-duration: 2s;
+}
+
+input::placeholder{
+    padding: 0px 0px 0px 3px
+}
+
+input:hover{
+    transition-timing-function: ease;
+    background: rgb(228, 226, 226);
+}
+
+button{
+    border-radius: 9px;
+    border: solid 0.5px rgb(54, 54, 54);
+    width: 100px;
+
+    transition-duration: 1s;
+}
+
+button:hover{
+    background: #ffff;
+    transition-timing-function: ease-in-out;
+
+}
+
+label{
+    width: 80px;
+    display: inline-block;
+}
+
+
+/*Home*/
+
+.conteinerElemento{
+    width: 250px;
+    height: 30px;
+    border: solid 1px black;
+    margin-left: 40%;
+    margin-right: 50%;
+    padding: 5px;
+}
+
+.elemento{
+    background-color: black;
+    width: 30px;
+    height: 30px;
+
+    transition-duration: 2s;
+    transition-delay: 0s;
+    transition-timing-function: ease;
+    transition-property: all;
+}
+
+.elemento:hover{
+    border-radius: 50%;
+    transform: translateX(220px);
+}
+
+.tituloCabecalhoHome{
+    text-align: center;
+}
+
+.textoPrincipalHome{
+    text-align: center;
+    font-size: 15px;
+}
+
+.textoSecundarioHome{
+    text-align: center;
+}
