@@ -30,6 +30,7 @@
       <li>Página Inicial <a href="https://github.com/Matheus-FSantos" target="_blank">(Clique Aqui)</a></li>
       <li>Readme - Repositório <a href="https://github.com/Matheus-FSantos/Matheus-FSantos" target="_blank">(Clique Aqui)</a></li>
       <li>Exercicios em Java (Algoritmos) - Repositório <a href="https://github.com/Matheus-FSantos/ExerciciosJava" target="_blank">(Clique Aqui)</a></li>
+      <li>MySQL - SoftBlue - Repositório <a href="https://github.com/Matheus-FSantos/MySQL-Softblue" target="_blank">(Clique Aqui)</a></li>
       <li>Arduino - Repositório <a href="https://github.com/Matheus-FSantos/ArduinoProjetos" target="_blank">(Clique Aqui)</a></li>
       <li>Curso de Java - Repositório <a href="https://github.com/Matheus-FSantos/Curso-de-Java-Udemy" target="_blank">(Conteúdo Em Breve)</a></li>
       <li>Curso Desenvolvimento Web Completo - Repositório <a href="https://github.com/Matheus-FSantos/curso-desenvolvimeto-web-completo-udemy/" targer="_blank">(Conteúdo Em Breve)</a></li>
