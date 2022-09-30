@@ -26,7 +26,6 @@
   <h6 align="center">Navegação:</h6>
   <nav>
     <ul>
-      
       <li>Página Inicial <a href="https://github.com/Matheus-FSantos" target="_blank">(Clique Aqui)</a></li>
       <li>Readme - Repositório <a href="https://github.com/Matheus-FSantos/Matheus-FSantos" target="_blank">(Clique Aqui)</a></li>
       <li>Programação Web - Repositório <a href="https://github.com/Matheus-FSantos/SENAC-PWA107-1142496616-Matheus" target="_blank">(Clique Aqui)</a></li>
