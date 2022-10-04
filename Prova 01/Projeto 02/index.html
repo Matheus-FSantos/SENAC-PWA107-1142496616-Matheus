@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loja Virtual</title>
+        <link href='style.css' rel='stylesheet'></link>
+    </head>
+    <body>
+        <div class="principal">
+            <div class='tituloDiv'>
+                <h1 class='titulo'>Loja <span class='tituloSegundaCor'>Virtual</span></h1>
+                <img src='./img/shop icon.png'/>
+            </div>
+
+            <div class='custom-select'>
+                <select id='ComboBox'>
+                    <option selected disabled>Selecione um item...</option>
+                </select>
+            </div>
+
+            <div class='inputsDiv'>
+                <label for='inputQuantidade' class='subtitulo'>Quantidade a comprar</label>
+                <input id='inputQuantidade' type='number'placeholder='Informe  aqui...' required/>
+            </div>
+
+            <div class='botaoDiv'>
+                <button type='button'class='botao' onclick='voltarValores()'>Realizar Compra</button>
+            </div>
+
+            <hr/>
+
+            <div class='mensagemDiv'>
+                <p id='mensagem'></p>
+            </div>
+        </div>
+        <script type='text/javascript' src='script.js'></script>
+    </body>
+</html>

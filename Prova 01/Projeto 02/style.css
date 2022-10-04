@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: rgb(38, 0, 65);
+}
+
+hr{
+    width: 70%;
+    margin: auto;
+}
+
+.principal{
+    width: 50%;
+    margin: auto;
+    
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 16px 16px 5px black;
+    padding: 10px;
+    background: white;
+
+    position: absolute;
+    top: 15%;
+    left: 25%;
+
+    transition-duration: 1s;
+}
+
+.principal:hover{
+    transition-timing-function: ease;
+
+    position: absolute;
+    top: 13%;
+    box-shadow: 32px 32px 16px black;
+}
+
+.tituloSegundaCor{
+    color: rgb(83, 83, 255);
+}
+
+.tituloDiv{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+img {
+    width: 45px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+
+    text-align: center;
+}
+
+.custom-select{
+    padding: 20px;
+    margin-bottom: -5px;
+    text-align: center;
+}
+
+select {
+    font-family: 'Poppins', sans-serif;
+
+
+    box-shadow: 1px 1px 5px black;
+    width: 70%;
+    margin: auto;
+
+    background: #4c4f61;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.inputsDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    width: 80%;
+    margin: 20px auto 0px auto;
+    padding: 20px;
+}
+
+.subtitulo{
+    font-family: 'Poppins', sans-serif;
+
+
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+#inputQuantidade{
+    font-family: 'Poppins', sans-serif;
+
+
+    background: #4c4f61;
+    color: white;
+
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 0.2px black;
+}
+
+/*Remover as setas do input number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.botaoDiv{
+    padding: 20px;
+    text-align: center;
+}
+
+.botao{
+    font-family: 'Poppins', sans-serif;
+
+    background: #4c4f61;
+    color: white;
+
+    padding: 10px;
+    border: solid 0.2px black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+    transition-duration: 0.5s;
+}
+
+.botao:hover{
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    background: gray;
+    box-shadow: 2px 2px 2px black;
+}
+
+.botao:active{
+    position: relative;
+    top: 7px;
+
+    background: rgb(87, 87, 162);
+    box-shadow: none;
+}
+
+.mensagemDiv{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#mensagem{
+    font-family: 'Poppins', sans-serif;
+
+    text-align: center;
+    font-size: 18px;
+}
