@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+hr{
+    width: 70%;
+    margin: auto;
+}
+
+.principalLogin{
+    width: 70%;
+    margin: auto;
+
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 16px 16px 5px black;
+    padding: 10px;
+    background: white;
+
+    position: absolute;
+    top: 23%;
+    left: 15%;
+
+    transition-duration: 1s;
+}
+
+.principalLogin:hover{
+    transition-timing-function: ease;
+
+    position: absolute;
+    top: 22%;
+    box-shadow: 32px 32px 16px black;
+}
+
+.tituloLogin{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+
+    text-align: center;
+}
+
+.inputsDiv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    width: 80%;
+    margin: 20px auto 0px auto;
+    padding: 20px;
+}
+
+.subtitulo{
+    font-family: 'Poppins', sans-serif;
+
+
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.inputs{
+    font-family: 'Poppins', sans-serif;
+
+
+    background: #fcfcfc;
+    color: gray;
+
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 0.2px black;
+}
+
+.botaoDiv{
+    padding: 20px;
+    text-align: center;
+}
+
+.botao{
+    font-family: 'Poppins', sans-serif;
+
+    background: #fcfcfc;
+
+    padding: 10px;
+    border: solid 0.2px black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+
+    transition-duration: 0.5s;
+}
+
+.botao:hover{
+    transition-timing-function: ease;
+    transition-delay: 0s;
+
+    background: gray;
+    box-shadow: 2px 2px 2px black;
+}
+
+.botao:active{
+    position: relative;
+    top: 7px;
+
+    background: blue;
+    box-shadow: none;
+}
+
+.mensagemDiv{
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.mensagem{
+    font-family: 'Poppins', sans-serif;
+
+    text-align: center;
+    font-size: 18px;
+
+    list-style: none;
+}

@@ -1,0 +1,10 @@
+.conteinerImagemRobo{
+    width: 70%;
+    margin: auto;
+}
+
+.imagemRobo{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}

@@ -1,0 +1,63 @@
+.principalHome{
+    width: 70%;
+    margin: auto;
+
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 16px 16px 5px black;
+    padding: 10px;
+
+    position: absolute;
+    top: 24%;
+    left: 15%;
+    right: 15%;
+
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.principalHome:hover{
+    transition-timing-function: ease;
+
+    position: absolute;
+    top: 22%;
+    box-shadow: 32px 32px 16px black;
+}
+
+.tituloHome{
+    text-align: center;
+    padding: 15px;
+}
+
+.conteinerSecundarioHome{
+    display: flex;
+    justify-content: space-between;
+}
+
+.textoHome1{
+    margin-top: 2%; 
+    text-align: center;
+}
+
+.textoHome2{
+    margin-top: 10%; 
+    text-align: justify;
+}
+
+.imagemPrincipalHome{
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+.rodape{
+    width: 20%;
+    margin: auto;
+}
+
+.imagemLogoFooter{
+    margin-top: 40px;
+    width: 70%;
+    height: auto;
+    border-radius: 50%;
+}

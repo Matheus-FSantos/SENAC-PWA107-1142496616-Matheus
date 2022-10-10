@@ -1,0 +1,30 @@
+.principalSobre{
+    width: 70%;
+    margin: auto;
+
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 16px 16px 5px black;
+    padding: 10px;
+    background: white;
+
+    position: absolute;
+    top: 23%;
+    left: 15%;
+
+    transition-duration: 1s;
+}
+
+.principalSobre:hover{
+        transition-timing-function: ease;
+
+    position: absolute;
+    top: 22%;
+    box-shadow: 32px 32px 16px black;
+}
+
+.imagemLogoSobre{
+    margin-top: 50px;
+    width: 100px;
+    height: auto;
+}
