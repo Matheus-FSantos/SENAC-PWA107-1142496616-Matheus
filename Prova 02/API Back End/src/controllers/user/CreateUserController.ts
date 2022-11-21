@@ -23,6 +23,14 @@ class CreateUserController {
         resposta.json(users);
     }
 
+    async put(requisicao: Request, resposta: Response){
+        const {id} = requisicao.params;
+        const {nomeUser, senha} = requisicao.body;
+        const createUserService = new CreateUserService();
+        const user = await createUserService.put({id, nomeUser, senha});
+        resposta.json(user);
+    }
+
     async delete(requisicao: Request, resposta: Response){
         const {id} = requisicao.params;
         const createUserService = new CreateUserService();

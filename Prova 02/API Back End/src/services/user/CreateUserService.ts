@@ -10,6 +10,12 @@ interface UserRequestUnique {
     id: string;
 }
 
+interface UserRequestUpdate {
+    id: string;
+    nomeUser: string;
+    senha: string;
+}
+
 class CreateUserService {
     async post({ nomeUser, senha, perfil }: UserRequest) {
         if (!nomeUser) {
@@ -47,35 +53,65 @@ class CreateUserService {
         return usuario;
     }
 
-    async getUnique({id}: UserRequestUnique){
-        if(!id){
-            throw new Error("O ID do usuário deve ser informado");
+    async getUnique({ id }: UserRequestUnique) {
+        const user = await prismaClient.user.findUnique({
+            where: {
+                idUser: parseInt(id)
+            }
+        });
+
+        if (user) {
+            return user;
         } else {
-            const user = await prismaClient.user.findUnique({
+            throw new Error("O usuário não existe no banco de dados");
+        }
+    }
+
+    async put({ id, nomeUser, senha }: UserRequestUpdate) {
+        if (!nomeUser) {
+            throw new Error('O Novo nome do usuário deve ser informado');
+        } else if (!senha) {
+            throw new Error('A Nova senha do usuário deve ser informado');
+        } else {
+            let user = await prismaClient.user.findUnique({
                 where: {
                     idUser: parseInt(id)
                 }
             });
 
-            if(user){
-                return user;
+            if (!user) {
+                throw new Error("O ID informado não pertence a nenhum usuário");
             } else {
-                throw new Error("O usuário não existe no banco de dados");
+                user = await prismaClient.user.update({
+                    where: {
+                        idUser: parseInt(id)
+                    }, data: {
+                        nomeUser: nomeUser, senha: senha
+                    }
+                });
             }
+
+            return user;
         }
     }
 
-    async delete({id}: UserRequestUnique){
-        if(!id){
-            throw new Error("O ID do usuário deve ser informado");
-        } else {
+    async delete({ id }: UserRequestUnique) {
+        let user = await prismaClient.user.findFirst({
+            where: {
+                idUser: parseInt(id)
+            }
+        });
+
+        if (user) {
             await prismaClient.user.delete({
                 where: {
                     idUser: parseInt(id)
                 }
             });
 
-            return {"Usuário": "Deletado"};
+            return { "Usuário": "Deletado" };
+        } else {
+            throw new Error("O Usuário com o ID informado não existe no banco de dados");
         }
     }
 }
