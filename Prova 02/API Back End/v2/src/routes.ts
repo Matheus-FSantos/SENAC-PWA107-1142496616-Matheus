@@ -3,11 +3,13 @@ import 'express-async-errors';
 import {CreateCategoryController} from './controllers/categoria/CreateCategoryController';
 import {CreateUserController} from './controllers/user/CreateUserController';
 import {CreateComandaController} from './controllers/comanda/CreateComandaController';
+import {CreateProductController} from './controllers/produto/CreateProductController';
 
 const router = Router();
 const createUserController = new CreateUserController();
 const createCategoryController = new CreateCategoryController();
 const createComandaController = new CreateComandaController();
+const createProductController = new CreateProductController();
 
 router.post('/usuarios', createUserController.post);
 router.get('/usuarios', createUserController.get);
@@ -22,5 +24,14 @@ router.put('/categorias/:id', createCategoryController.put);
 router.delete('/categorias/:id', createCategoryController.delete);
 
 router.post('/comandas', createComandaController.post);
+router.get('/comandas', createComandaController.get);
+router.get('/comanda/:id', createComandaController.getUnique);
+router.put('/comandas/:id', createComandaController.put);
+router.delete('/comandas/:id', createComandaController.delete);
 
+router.post('/produtos', createProductController.post);
+router.get('/produtos', createProductController.get);
+router.get('/produto/:id', createProductController.getUnique);
+router.put('/produtos/:id', createProductController.put);
+router.delete('/produtos/:id', createProductController.delete);
 export {router};

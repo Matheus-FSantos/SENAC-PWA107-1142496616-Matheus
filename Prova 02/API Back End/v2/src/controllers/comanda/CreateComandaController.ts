@@ -9,6 +9,38 @@ class CreateComandaController {
         
         return resposta.json(comanda);
     }
+
+    async get(requisicao: Request, resposta: Response){
+        const createComandaService = new CreateComandaService();
+        const comandas = await createComandaService.get();
+
+        return resposta.json(comandas);
+    }
+
+    async getUnique(requisicao: Request, resposta: Response){
+        const {id} = requisicao.params;
+        const createComandaService = new CreateComandaService();
+        const comanda = await createComandaService.getUnique({id});
+
+        return resposta.json(comanda);
+    }
+
+    async put(requisicao: Request, resposta: Response){
+        const {id} = requisicao.params;
+        const {numeroMesa, status, rascunho} = requisicao.body;
+        const createComandaService = new CreateComandaService();
+        const comanda = await createComandaService.put({numeroMesa, status, rascunho, id});
+
+        return resposta.json(comanda);
+    }
+
+    async delete(requisicao: Request, resposta: Response){
+        const {id} = requisicao.params;
+        const createComandaService = new CreateComandaService();
+        const status = await createComandaService.delete({id});
+        
+        return resposta.json(status);
+    }
 }
 
 export {CreateComandaController};
