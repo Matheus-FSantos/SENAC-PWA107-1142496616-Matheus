@@ -1,0 +1,83 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  idUser        Int    @id @unique @default(autoincrement())
+  nomeUser      String
+  senha         String
+  perfilUser    Int
+  criacao_at    DateTime?  @default(now())
+  alteracao_at  DateTime?  @default(now())
+
+  comanda       Comanda[]
+  
+  @@map("users")
+}
+
+model Categoria {
+  idCategoria   Int       @id @unique @default(autoincrement())
+  nomeCategoria String
+  criacao_at    DateTime? @default(now())
+  alteracao_at  DateTime? @default(now())
+
+  produto       Produto[]
+
+  @@map("categorias")
+}
+
+model Comanda {
+  idComanda     Int       @id @unique @default(autoincrement())
+  numeroMesa    Int
+  status        Boolean   @default(false)
+  rascunho      String?
+
+  user          User      @relation(fields: [idUser], references: [idUser])
+  idUser        Int
+
+  item              Item[]
+
+  criacao_at    DateTime? @default(now())
+  alteracao_at  DateTime? @default(now())
+  @@map("comandas")
+}
+
+model Produto {
+  idProduto         Int       @id @unique @default(autoincrement())
+  nomeProduto       String
+  precoProduto      Decimal
+  descricaoProduto  String?
+
+
+  categoria         Categoria @relation(fields: [idCategoria], references: [idCategoria])
+  idCategoria       Int
+
+  item              Item[]
+
+  criacao_at    DateTime? @default(now())
+  alteracao_at  DateTime? @default(now())
+  @@map("produtos")
+}
+
+model Item {
+  idItem        Int       @id @unique @default(autoincrement())
+  
+  comanda       Comanda   @relation(fields: [idComanda], references: [idComanda])
+  idComanda     Int
+
+  produto       Produto   @relation(fields: [idProduto], references: [idProduto])
+  idProduto     Int
+
+  quantidade    Int
+  criacao_at    DateTime? @default(now())
+  alteracao_at  DateTime? @default(now())
+  @@map("itens")
+}
